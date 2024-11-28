@@ -203,7 +203,6 @@ while True:
     titleNmenu()
     choice = get_valid_int("Enter your choice : ")
     print("=========================================\n")
-    login()
 
     if choice == 1:
         while True:
@@ -228,10 +227,12 @@ while True:
         id = int(input("Masukkan id : "))
         nama = str(input("Masukkan name : "))
         post(id, nama)
-        
+        input("Press Enter to continue...")
 
     elif choice == 3:
         id = int(input("Masukkan id : "))
+        delete(id)
+        input("Press Enter to continue...")
 
     elif choice == 4:
         input("Press Enter to continue...")
